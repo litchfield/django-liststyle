@@ -1,0 +1,15 @@
+Style your django admin changelist rows with ease! 
+
+1. Add liststyle to your PYTHONPATH and settings.py INSTALLED_APPS
+
+2. Add to your ModelAdmin classes like this --
+
+class MyModelAdmin(admin.ModelAdmin, ListStyleAdminMixin):
+    ...
+    def get_row_css(self, obj, index):
+        if obj.active:
+            return 'red red%d' % index
+        return ''
+        
+Note. If you have your own change_list_results.html; you'll need to 
+incorporate the changes from the one here.
