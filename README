@@ -1,8 +1,10 @@
 Style your django admin changelist rows with ease! 
 
-1. Add liststyle to your PYTHONPATH and settings.py INSTALLED_APPS
+1. Install using pip
 
-2. Add to your ModelAdmin classes like this --
+2. Add liststyle to your settings.py INSTALLED_APPS
+
+3. Add to your ModelAdmin classes like this --
 
 class MyModelAdmin(admin.ModelAdmin, ListStyleAdminMixin):
     ...
