@@ -1,3 +1,5 @@
 .DS_Store
 *.pyc
 dist/
+MANIFEST
+django_liststyle.egg-info/

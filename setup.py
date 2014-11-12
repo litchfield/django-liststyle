@@ -1,7 +1,7 @@
-from distutils.core import setup
-
+from setuptools import setup
 
 VERSION = '0.2a'
+
 
 setup(
     name='django-liststyle',
@@ -13,7 +13,7 @@ setup(
     url="http://github.com/litchfield/django-liststyle",
     license="MIT License",
     platforms=["any"],
-    packages=['liststyle'],
+    packages=['liststyle', 'liststyle.templatetags'],
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Environment :: Web Environment",
