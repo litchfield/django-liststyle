@@ -1,17 +1,7 @@
 from distutils.core import setup
-from distutils.command.install import INSTALL_SCHEMES
-import os
 
-root = os.path.dirname(os.path.abspath(__file__))
-os.chdir(root)
 
-VERSION = '0.1'
-
-# Make data go to the right place.
-# http://groups.google.com/group/comp.lang.python/browse_thread/thread/35ec7b2fed36eaec/2105ee4d9e8042cb
-for scheme in INSTALL_SCHEMES.values():
-    scheme['data'] = scheme['purelib']
-
+VERSION = '0.2a'
 
 setup(
     name='django-liststyle',
@@ -24,7 +14,6 @@ setup(
     license="MIT License",
     platforms=["any"],
     packages=['liststyle'],
-    #data_files=[(template_dir, templates)],
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Environment :: Web Environment",
