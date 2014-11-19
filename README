@@ -13,5 +13,6 @@ class MyModelAdmin(admin.ModelAdmin, ListStyleAdminMixin):
             return 'red red%d' % index
         return ''
         
-Note. If you have your own change_list_results.html; you'll need to 
-incorporate the changes from the one here.
+Note: If you have your own change_list_results.html; you'll need to 
+incorporate the changes from the one here. An example of a custom template
+from the "grappelli" package is included in templates/admin/ dir.

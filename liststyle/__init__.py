@@ -1,1 +1,1 @@
-from admin import ListStyleAdminMixin
+from .admin import ListStyleAdminMixin
