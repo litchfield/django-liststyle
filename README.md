@@ -1,10 +1,10 @@
-Style your django admin changelist rows with ease! 
+# Style your django admin changelist rows with ease! 
 
-1. Install using pip
+## Install using pip
 
     $ pip install git+https://github.com/Cotidia/django-liststyle.git
 
-2. Add liststyle to your settings.py INSTALLED_APPS
+## Add liststyle to your settings.py INSTALLED_APPS
 
     INSTALLED_APPS = {
         ...
@@ -12,7 +12,7 @@ Style your django admin changelist rows with ease!
         ...
     }
 
-3. Add to your ModelAdmin classes like this --
+## Add to your ModelAdmin classes like this --
 
     class MyModelAdmin(admin.ModelAdmin, ListStyleAdminMixin):
         
