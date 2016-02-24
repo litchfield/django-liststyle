@@ -2,7 +2,7 @@
 
 ### Install using pip
 
-    $ pip install git+https://github.com/Cotidia/django-liststyle.git
+    $ pip install django-liststyle
 
 ### Add liststyle to your settings
 
