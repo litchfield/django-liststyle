@@ -1,5 +1,7 @@
 # Style your django admin changelist rows with ease! 
 
+Update: now Python 3 compatible
+
 ### Install using pip
 
     $ pip install django-liststyle
