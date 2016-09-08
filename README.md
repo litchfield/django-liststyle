@@ -4,13 +4,15 @@ Update: now Python 3 compatible
 
 ### Install using pip
 
-    $ pip install django-liststyle
+    $ pip install django-liststyle==0.2b
 
-### Add liststyle to your settings
+### Add liststyle to your settings BEFORE django.contrib.admin
 
     INSTALLED_APPS = {
         ...
         'liststyle',
+        ...
+        'django.contrib.admin',
         ...
     }
 
